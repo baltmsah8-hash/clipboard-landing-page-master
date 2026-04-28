@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --h: #4c5266;
+  --p: #9fabb2;
+  --btn-ios: #26baa4;
+  --btn-mac: #6173ff;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body{
+  background-color: #ffffffff;
+  font-family: "bai Jamjuree", Sans-Serif;
+  font-weight: 400;
+  text-align: center;
+  user-select: none;
+}
+
+header{
+  background-image: url("images/bg-header-mobile.png");
+  background-size: cover;
+  margin: auto auto 100px;
+}
+
+header img{
+  margin: 30px auto;
+}
+
+h2{
+  color: var(--h);
+}
+
+h3{
+  color: var(--h);
+}
+
+ p{
+  color: var(--p);
+}
+
+.btn-ios{
+  width: 80%;
+  max-width: 300px;
+  background-color: var(--btn-ios);
+  display: block;
+  padding: 15px;
+  margin: 15px auto;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 5px 3px 5px #1f9583;
+}
+
+.btn-mac{
+  width: 80%;
+  max-width: 300px;
+  background-color: var(--btn-mac);
+  display: block;
+  padding: 15px;
+  margin: 15px auto;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 5px 3px 5px #4e5cd9;
+}
+
+section{
+  width: auto;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sec1{
+  margin: auto auto 150px;
+}
+
+.sec2{
+  margin: auto auto 100px;
+}
+
+.sec3{
+  margin: auto auto 100px;
+}
+
+.sec3 .art4{
+  margin: auto auto 100px;
+}
+
+section article{
+  margin: 40px auto 60px;
+}
+
+.img{
+  width: 250px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.sec-icon img{
+  margin: 50px auto;
+  display: block;
+}
+
+footer{ 
+  background-color: #f5f6f8;
+  font-size: 0.6875rem;
+  text-align: center; 
+}
+
+footer .logo-c{
+  width: 80px;
+  height: 80px;
+  margin: 20px auto auto;
+}
+
+footer .link a{
+  display: block;
+  color: var(--p);
+  text-align: center;
+  margin: 20px auto;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.foot-icon img{
+  margin: 10px 20px;
+}
+
+.end{
+  margin: 15px auto;
+}
+
+.end a {
+  color: hsl(228, 45%, 44%); 
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+hr{
+  background-color: black;
+  width: 80%;
+  height: 3px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px){
+  body{
+    width: auto;
+    margin: 10px 10px;
+  }
+  header{
+    background-image: url("images/bg-header-desktop.png");
+  }
+  .btn-ios, .btn-mac{
+    display: inline-block;
+    width: 30%;
+    margin: 20px 10px;
+  }
+  .sec1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "art1 art1"
+    "img art2"
+    "img art3"
+    "img art4";
+    text-align: left;
+   }
+   .sec1 .art1{
+     grid-area: art1;
+     text-align: center;
+     margin: 10px 10px;
+   }
+   .sec1 .art2{
+     grid-area: art2;
+     margin: 10px 10px;
+   }
+   .sec1 .art3{
+     grid-area: art3;
+     margin: 10px 10px;
+   }
+   .sec1 .art4{
+     grid-area: art4;
+     margin: 10px 10px;
+   }
+   .sec1 .img{
+     grid-area: img;
+     width: 450px;
+     height: 350px;
+     margin: 10px 30px 10px auto;
+   }
+   .sec2 p{
+     width: 600px;
+     margin: 10px auto;
+   }
+   .sec2 .img{
+     width: 650px;
+     height: 400px;
+     margin: 50px auto;
+   }
+   .sec3{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: repeat(3, 1fr);
+     grid-template-areas: 
+     ". art1 art1 art1 ."
+     ". art2 art3 art4 ."
+     "img img img img img";
+   }
+   h2, h3{
+     margin-bottom: 15px;
+   }
+   .sec3 .art1{
+     grid-area: art1;
+   }
+   .sec3 .art2{
+     grid-area: art2;
+     width: 200px;
+     margin: 50px 50px;
+   }
+   .sec3 .art3{
+     grid-area: art3;
+     width: 200px;
+     margin: 50px 50px;
+   }
+   .sec3 .art4{
+     grid-area: art4;
+     width: 200px;
+     margin: 50px 50px;
+   }
+   .sec3 .sec-icon img{
+     display: inline-block;
+     margin: 40px 20px;
+   }
+   .sec3 .sec-icon{
+     grid-area: img;
+     margin: 50px auto auto;
+   }
+   .sec4{
+     width: 600px;
+   }
+   footer{
+     display: flex;
+     justify-content: space-evenly;
+     align-content: center;
+   }
+   footer .logo-c{
+     margin: auto;
+   }
+   footer .link{
+     width: 500px;
+     margin: auto;
+   }
+   footer .link a{
+     display: inline-block;
+     margin: 30px 20px;
+   }
+   footer .foot-icon{
+     display: flex;
+     flex-direction: row;
+     margin: auto;
+   }
+}
